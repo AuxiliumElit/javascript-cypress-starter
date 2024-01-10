@@ -1,0 +1,34 @@
+{
+  "name": "javascript-cypress-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "open_all_tests_from_qa1_env": "npx cypress open --env configFile=qa1",
+    "smoke_tests_for_qa1_env": "npx cypress run --env configFile=qa1 --spec cypress/e2e/ui-test-suite/ui-demo-test-one.spec.js",
+    "open_all_tests_for_qa2_env": "npx cypress open --env configFile=qa2",
+    "smoke_tests_for_qa2_env": "npx cypress run --env configFile=qa2 --spec cypress/e2e/ui-test-suite/ui-demo-test-one.spec.js",
+    "open_all_tests": "npx cypress run",
+    "smoke_test_suite": "npx cypress run --browser=chrome --spec cypress/e2e/ui-test-suite/ui-demo-test-one.spec.js",
+    "ui_regression_test_suite": "npx cypress run --browser=chrome --spec cypress/e2e/ui-test-suite/*.js",
+    "api_regression_test_suite": "npx cypress run --browser=chrome --spec cypress/e2e/api-test-suite/*.js",
+    "mochawesome_generate": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json"
+  },
+  "keywords": [
+    "Test",
+    "Automation"
+  ],
+  "author": "Auxilium Elit",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.6.2",
+    "cypress-multi-reporters": "^1.6.4",
+    "mocha-junit-reporter": "^2.2.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="12.696" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-01-10T03:49:40" tests="0" file="cypress\e2e\ui-test-suite\ui-demo-test-two.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Verify Negative Test Cases for Countact Us Page" timestamp="2024-01-10T03:49:40" tests="3" time="12.691" failures="1">
+    <testcase name="Verify Negative Test Cases for Countact Us Page Demo Test Four: Verify if Name id require once user click Submit button" time="2.953" classname="Demo Test Four: Verify if Name id require once user click Submit button">
+    </testcase>
+    <testcase name="Verify Negative Test Cases for Countact Us Page Demo Test Five: Verify if Phone Number is require once user click Submit button" time="2.943" classname="Demo Test Five: Verify if Phone Number is require once user click Submit button">
+    </testcase>
+    <testcase name="Verify Negative Test Cases for Countact Us Page Demo Test Six: Verify if Email is require once user click Submit button" time="0.000" classname="Demo Test Six: Verify if Email is require once user click Submit button">
+      <failure message="Timed out retrying after 4000ms: expected &apos;Please fill out this field.&apos; to equal &apos;Lorem Ipsum&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected 'Please fill out this field.' to equal 'Lorem Ipsum'
+    at ContactUsPage.verifyEmailTextFieldAlert (webpack://javascript-cypress-starter/./cypress/support/page-objects/contactUsPage.js:15:7)
+    at Context.eval (webpack://javascript-cypress-starter/./cypress/e2e/ui-test-suite/ui-demo-test-two.spec.js:23:20)
+
+      + expected - actual
+
+      -'Please fill out this field.'
+      +'Lorem Ipsum'
+      ]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
